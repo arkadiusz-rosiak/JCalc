@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import it.rosiak.jpaint.layout.ResizableCanvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/8.0.112-ea">
+
+    <ResizableCanvas fx:id="canvas" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" />
+
+    <TitledPane text="Output text" fx:id="outputPane" collapsible="false" AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0" prefHeight="150" prefWidth="Infinity">
+        <content>
+            <AnchorPane>
+                <children>
+                    <Label fx:id="outputText"></Label>
+                </children>
+            </AnchorPane>
+        </content>
+    </TitledPane>
+
+    <TitledPane fx:id="toolkit" collapsible="false" prefHeight="100" text="Tool selection" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="25">
+        <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="250.0">
+                <children>
+                    <Button fx:id="commandDrawCurve" layoutX="10" layoutY="10" />
+                    <Button fx:id="commandEraser" layoutX="40" layoutY="10" />
+                </children>
+            </AnchorPane>
+        </content>
+    </TitledPane>
+
+    <TitledPane fx:id="currentToolCustomization" collapsible="false" prefHeight="150" prefWidth="250" text="Tool Customization" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="100">
+        <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="250.0">
+                <children>
+                    <Label layoutX="10" layoutY="14">Foreground:</Label>
+                    <ColorPicker fx:id="foregroundColor" layoutX="90" layoutY="10" />
+
+                    <Label layoutX="10" layoutY="44">Background:</Label>
+                    <ColorPicker fx:id="backgroundColor" layoutX="90" layoutY="40" />
+
+                    <Label layoutX="10" layoutY="74">Thickness:</Label>
+                    <Label fx:id="thicknessDisplay" layoutX="90" layoutY="74" />
+                    <Slider fx:id="thickness" layoutX="110" layoutY="74" max="50.0" min="6.0" prefWidth="110" showTickLabels="true" showTickMarks="true" value="10.0" />
+                </children>
+            </AnchorPane>
+        </content>
+    </TitledPane>
+
+    <TitledPane fx:id="layers" collapsible="false" prefHeight="250" prefWidth="250" text="Layers" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="250">
+
+        <content>
+            <ScrollPane fitToWidth="true" layoutY="30">
+                <content>
+                    <VBox fx:id="layersScroll" alignment="center" maxWidth="250" prefWidth="250" spacing="3">
+                        <children>
+                            <Pane styleClass="grayPane">
+                                <Label>Layer 1</Label>
+                            </Pane>
+                        </children>
+                    </VBox>
+                </content>
+            </ScrollPane>
+        </content>
+
+    </TitledPane>
+
+    <TitledPane collapsible="false" prefWidth="250" text="History" AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="500">
+
+        <content>
+            <ScrollPane fitToWidth="true">
+                <content>
+                    <VBox fx:id="historyBox" spacing="3">
+                        <children>
+                        </children>
+                    </VBox>
+                </content>
+            </ScrollPane>
+        </content>
+
+    </TitledPane>
+
+</AnchorPane>

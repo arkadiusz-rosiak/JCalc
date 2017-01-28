@@ -1,0 +1,55 @@
+﻿Distributed Paint 
+
+1) Wymania funkcjonalne
+Jako użytkownik chcę:
+	- rysować następujące kształty:
+		- linię,
+		- elipsę,
+		- prostokąt,
+		- trójkąt,
+		- dowolny wielobok (+),
+		- dowolną krzywą,
+		- dowolną krzywą lub punkt przy pomocy pędzla (+) - zdefiniowanego na przyklad w pliku .bmp w katalogu z pluginami
+		- dowolny tekst,
+		- siatka.
+	- wybrać kolor linii dla następujących kształtów:
+		- linia,
+		- elipsa,
+		- prostokąt,
+		- dowolna krzywa,
+		- trójkąt
+		- dowolny wielobok
+	- wybrać kolor wypełnienia dla następujących kształtów:
+		- elipsa
+		- prostokąt
+		- trójkąt
+		- dowolny wielobok
+	- wybrać kolor tekstu:
+	- zdefiniować kolor linii, kolor wypełnienia oraz tesktu jako:
+		- kolor jednolity
+		- gradient dwóch kolorów
+		- dowolny z powyższych z możliwością zdefiniowania poziomu krycia ( opacity ) 
+	- użyć klawisza "shift", który podczas rysowania:
+		- elipsy stworzy okrąg
+		- prostokąta stworzy kwadrat
+		- trójkąta stworzy trójkąt równoboczny (+)
+	- pobierać kolor linii za pomocą próbnika
+	- użyć klawisza "ctrl", który podczas rysowania dopasuje kształty do siatki punktów o zdefiniowanej odległości
+	- użyć kombinacji klawiszy "ctrl+z" i "ctrl+y" do odpowiednio operacji "undo" i "redo"
+	- użyć kombinacji klawiszy "ctrl+s" do zapisania uprzednio otwartego pliku pod tą samą nazwą
+	- użyć kombinacji klawiszy "ctrl+o" do wczytania rastrowego pliku graficznego
+	- użyć kombinacji klawiszy "ctrl+shift+s" do zapisania pliku pod zdefiniowaną przez użytkownika nazwą
+	- użyć kombinacji klawiszy "ctrl+shift+x" do zapisania stanu aplikacji ( persystowania modelu w celu jego dalszej obróbki )
+	- zobaczyć listę wartw, na których rysowane są kształty
+	- wyłączać poszczególne warstwy z rysowania
+	- modifykować kolejność rysowanych warstw
+	- transformować poszczególne figury poprzez: 	
+		- obrócenie
+		- powiększenie/pomniejszenie
+		- przesunięcie
+	+ widzieć listę akcji, które wykonał użytkownik, wraz z dokładnym czasem ich wykonania.
+	+ listę akcji, które zostały "cofnięte". Lista akcji oraz lista cofniętych akcji powinny się aktualizować automatycznie
+	- aplikować filtry do warstw oraz całego obrazka:
+		- sepia
+		- monochromatyzm
+		

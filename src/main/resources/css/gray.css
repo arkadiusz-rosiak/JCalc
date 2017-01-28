@@ -1,0 +1,114 @@
+.root{
+    -fx-base: #f0f0f0;
+    -toolbar-background: #e8e8e8;
+
+    -fx-background: -fx-base;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+
+    -fx-min-width: 750px;
+    -fx-min-height: 650px;
+}
+
+
+#menuBar{
+    -fx-padding: 0.0em 0.666667em 0.0em 0.666667em; /* 0 8 0 8 */
+    -fx-spacing: 0.166667em;
+    -fx-background-color: #e8e8e8;
+    -fx-background-insets: 0 0 0 0, 1 0 1 0;
+    -fx-background-radius: 0, 0 ;
+
+    -fx-border-color: #a0a0a0, #ffffff;
+    -fx-border-width: 0 0 2 0, 0 0 1 0;
+
+    -fx-max-height: 26px;
+    -fx-pref-height: 26px;
+}
+
+#secondBar{
+    -fx-background-color: -toolbar-background;
+
+    -fx-border-color: #a0a0a0, #ffffff;
+    -fx-border-width: 0 0 2 0, 0 0 1 0;
+
+    -fx-max-height: 40px;
+    -fx-pref-height: 40px;
+}
+
+#toolSelector{
+    -fx-background-color: -toolbar-background;
+}
+
+.rightSeparator{
+    -fx-padding: 5px 10px;
+    -fx-border-color: #a0a0a0, #ffffff;
+    -fx-border-width: 0 2 0 0, 0 1 0 0;
+}
+
+#toolSelector > Button{
+    -fx-background-size: 30px 30px;
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-color: none;
+
+    -fx-pref-width: 35px;
+    -fx-pref-height: 30px;
+
+    -fx-cursor: hand;
+
+    -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+#drawTool{
+    -fx-background-image: url("../icons/pencil.png");
+}
+
+#eraseTool{
+    -fx-background-image: url("../icons/eraser.png");
+}
+
+#colorLabel{
+    -fx-padding: 4px 15px 0px 0px;
+}
+
+#thicknessDisplay{
+    -fx-background-color: derive(-fx-base, 40%);
+    -fx-border-color: derive(-fx-base, -50%);
+    -fx-border-radius: 12px;
+    -fx-alignment: center;
+}
+
+#thickness{
+
+}
+
+#textOutput{
+    -fx-pref-height: 100px;
+    -fx-font-size: 16px;
+
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: derive(-fx-base, -45%);
+    -fx-border-width: 1;
+}
+
+#textOutput .content{
+    -fx-background-color: derive(-fx-base, 50%);
+}
+
+#textOutput > .scroll-pane > .scroll-bar:horizontal {
+    -fx-pref-height: 0px;
+    -fx-max-height: 0px;
+    -fx-opacity: 0;
+}
+
+#canvasWrapper{
+    -fx-background-color: derive(-fx-base, 50%);
+
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: derive(-fx-base, -45%);
+    -fx-border-width: 1;
+}

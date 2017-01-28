@@ -1,0 +1,24 @@
+﻿Wymagania dotyczące Designu do Distrubuted Painta
+Termin oddania: 16.11.2016r. godz: 23:59 jest nieprzekraczalny. Niedotrzymanie terminu równa się ocenie 2 z tego projektu.
+Design realizowany jest w co najwyżej dwuosobowych grupach. Skład grupy należy zgłosić mailem do 11.11.2016r. godz: 23:59. Nieprzesłanie informacji o grupie do podanego terminu równa się samodzielnemu realizowaniu designu.
+Niedopuszczalne jest kopiowanie i udostępnianie designu osobom spoza swojej grupy prowadzącym do plagiatu. Konsultacje pomiędzy grupami służące lepszemu zrozumieniu sedna problemu są dopuszczalne, a nawet wskazane.
+
+Cel designu:
+Celem designu jest przemyślenie funkcjonalności i ich wzajemnego na siebie oddziaływania, które już wkrótce będą zaimplementowane przy użyciu JavaFX. Nieznajomość frameworka, z którym się będzie pracowało jest rzeczą absolutnie normalną na tym etapie projektu ( nie tylko w środowisku akademickim, ale często również komercyjnym ). Należy powziąć założenia wobec frameworka, które zostaną zweryfikowane podczas implementacji. Absolutnie dopuszczalne, ale na ten moment nie wymagane, jest skonfrontowanie możliwości frameworka już na etapie designu. Im lepszy i bardziej odpowiadający rzeczywistości design, tym łatwiejsza implementacja i mniejsze prawdopodobieństwo wystąpienia późniejszych problemów.
+
+Czego ma dotyczyć design:
+Im więcej szczegółów przemyśli się na etapie designu tym lepiej. Pomijamy tutaj design klas komponentów graficznych. W szczególnie newralgicznych miejscach ( np.: rysowanie trójkąta ) należy zamodelować styk "Controllera" i "Modelu".
+Model w MVC można zdefiniować jako zbiór logiki biznesowej, w której nie znajdziemy klas z widoku.
+
+Forma:
+Diagram klas ma pokazywać zależności pomiędzy klasami. Bardzo mile widziane jest trzymanie się standardu UML (https://en.wikipedia.org/wiki/Class_diagram) jednak nie jest to wymóg. Diagram powinien jasno określać kontrakty pomiędzy klasami, dziedziczenie oraz wystawiane API.
+Diagram powinien być w nieoczywistych miejscach opisany w sposób tekstowy - w taki sposób, aby jasny był zamysł autora. Ważne, aby opis był spójny z diagramem.
+W razie wątpliwości co do formy, bardzo mile widziane jest wcześniejsze podesłanie mi efektów prac mailem, w celu otrzymania feedbacku.
+Preferowaną aplikacją do tworzenia diagramów jest Umlet. W przypadku użycia innego softu proszę o podesłanie zarówno pliku projektu jak i wyeksportowanego formatu w odpowiedniej rozdzielczości ( lub w formie wektorowej ).
+Diagramy powinny się znaleźć w repozytorium u każdego z członków zespołu w katalogu 4.JPaint/src/main/design
+
+Ocena:
+Ocena czysto subiektywna bazująca na moim doświadczeniu. Będę zwracał uwagę na użycie wzorców projektowych ( ale przemyślanie użytych, nie: im więcej tym lepiej ). Ważne jest również opisanie dlaczego zostały zastosowane takie, a nie inne rozwiązania i jakim zidentyfikowanym problemom odpowiadają.
+Pod ocenę nie będzie brana możliwość realizacji w realiach JavaFX. Tak jak napisałem wcześniej - nie jest wymagana wiedza o JavaFX na tym etapie. Zależy mi na tym, żebyście zidentyfikowali zbiór potencjalnych wyzwań i stworzyli odpowiednią ABSTRAKCJĘ, która zamodeluje i rozwiąże dany problem.
+W przypadku wątpliwości do co szczegółowości, proszę o maila z już zrealizowaną częścią designu.
+W razie pytań, skarg i zażaleń proszę o maila: mbocian@amu.edu.pl

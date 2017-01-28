@@ -1,0 +1,4 @@
+dependencies {
+    compile project(':Calculator')
+    compile fileTree(dir: '../libs', include: '*.jar')
+}

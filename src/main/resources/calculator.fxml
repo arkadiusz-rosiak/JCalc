@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import it.rosiak.jpaint.layout.ResizableCanvas?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="650" prefWidth="500" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <MenuBar fx:id="menuBar" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="-2">
+        <menus>
+            <Menu text="Edit">
+                <items>
+                    <MenuItem text="Undo" />
+                    <MenuItem text="Redo" />
+                </items>
+            </Menu>
+            <Menu text="Help">
+                <items>
+                    <MenuItem text="About" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+
+
+    <HBox fx:id="secondBar" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="25">
+        <HBox id="toolSelector" styleClass="rightSeparator">
+            <Button fx:id="drawTool" />
+            <Button fx:id="eraseTool" />
+        </HBox>
+
+        <Pane styleClass="rightSeparator">
+            <Label fx:id="thicknessLabel" layoutX="8" layoutY="10">Thickness:</Label>
+            <Label fx:id="thicknessDisplay" layoutX="70" layoutY="6" />
+            <Slider fx:id="thickness" layoutX="100" layoutY="12" max="50.0" min="6.0" prefWidth="110" value="10.0" />
+        </Pane>
+
+        <HBox styleClass="rightSeparator">
+            <Label fx:id="colorLabel">Foreground:</Label>
+            <ColorPicker fx:id="foregroundColor" />
+        </HBox>
+    </HBox>
+
+    <TextArea fx:id="textOutput" editable="false" promptText="Calculator output wil be displayed here" AnchorPane.leftAnchor="15" AnchorPane.rightAnchor="15" AnchorPane.topAnchor="80">
+
+
+    </TextArea>
+
+    <Pane fx:id="canvasWrapper" AnchorPane.bottomAnchor="15" AnchorPane.leftAnchor="15" AnchorPane.rightAnchor="15" AnchorPane.topAnchor="200">
+        <ResizableCanvas fx:id="canvas" />
+    </Pane>
+
+
+</AnchorPane>

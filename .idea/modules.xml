@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/.idea/modules/Calculator/Calculator.iml" group="Calculator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Calculator/Calculator_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Calculator/Calculator_main.iml" group="Calculator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Calculator/Calculator_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Calculator/Calculator_test.iml" group="Calculator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCalc.iml" filepath="$PROJECT_DIR$/.idea/modules/JCalc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCalc_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JCalc_main.iml" group="JCalc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCalc_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JCalc_test.iml" group="JCalc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OCR/OCR.iml" filepath="$PROJECT_DIR$/.idea/modules/OCR/OCR.iml" group="OCR" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OCR/OCR_main.iml" filepath="$PROJECT_DIR$/.idea/modules/OCR/OCR_main.iml" group="OCR" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OCR/OCR_test.iml" filepath="$PROJECT_DIR$/.idea/modules/OCR/OCR_test.iml" group="OCR" />
+    </modules>
+  </component>
+</project>

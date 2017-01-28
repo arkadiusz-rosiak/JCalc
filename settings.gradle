@@ -1,0 +1,9 @@
+rootProject.name = 'JCalc'
+
+rootProject.projectDir.eachDirRecurse() { dir ->
+    dir.eachFileMatch('build.gradle') { subdir ->
+        include dir.absolutePath.substring(rootProject.projectDir.absolutePath.length() + 1).replace(File.separator, ':')
+    }
+}
+include 'OCR'
+
