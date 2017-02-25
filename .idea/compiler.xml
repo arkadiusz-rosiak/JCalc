@@ -25,6 +25,8 @@
       <module name="Calculator_test" target="1.8" />
       <module name="JCalc_main" target="1.8" />
       <module name="JCalc_test" target="1.8" />
+      <module name="Main_main" target="1.5" />
+      <module name="Main_test" target="1.5" />
       <module name="OCR_main" target="1.8" />
       <module name="OCR_test" target="1.8" />
     </bytecodeTargetLevel>
